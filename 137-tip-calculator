@@ -1,0 +1,4 @@
+public Decimal computeTip(Decimal total, Integer percent) {
+    decimal r = (total/100) * percent;
+    return r;
+}
