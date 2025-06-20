@@ -1,8 +1,8 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
-    if(passedExam == true & passedAssignments == false && passedProject == false){
-    return true;
-    }
-    if(passedExam == false && passedAssignments == false && passedProject == true){
-        return false;
-    }
+    int count = 0;
+    if (passedExam) count++;
+    if (passedAssignments) count++;
+    if (passedProject) count++;
+    
+    return count >= 2;
 }
