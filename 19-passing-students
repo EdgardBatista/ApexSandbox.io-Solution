@@ -1,8 +1,17 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
-    int count = 0;
-    if (passedExam) count++;
-    if (passedAssignments) count++;
-    if (passedProject) count++;
-    
-    return count >= 2;
+
+    Integer count=0;
+
+ 
+
+    if(passedExam) count++;
+
+    if(passedAssignments) count++;
+
+    if(passedProject) count++;
+
+ 
+
+    if (count>1) return true; else return false;
+
 }
