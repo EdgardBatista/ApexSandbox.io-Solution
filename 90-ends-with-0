@@ -1,3 +1,9 @@
 public Boolean isEndWithZero(Integer num){
-     return num = math.mod(12, 2);
+ Integer r = Math.mod(number, 10);
+    
+    if (r== 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
